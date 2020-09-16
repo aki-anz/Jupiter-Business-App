@@ -6,6 +6,7 @@ import Home from './Components/Home/Home';
 import Search from './Components/Search/Search';
 import Contact from './Components/Contact/Contact';
 import Plan from './Components/Plan/Plan';
+import Page404 from './Components/Page404/Page404';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
      <Route path='/search' component={Search} />
      <Route path='/contact' component={Contact} />
      <Route path='/plan' component={Plan} />
+     <Route component={Page404} />
      </Switch>
     </Router>
   );
