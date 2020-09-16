@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f2f1e17ce6841bc494416c8946db1c8",
+    "revision": "6d658ec97ef91143acc31ea96b71adfc",
     "url": "/jupiter-business-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jupiter-business-app/static/css/2.8d4cdce2.chunk.css"
   },
   {
-    "revision": "c217d096f97f239be211",
+    "revision": "f570edfda760a60f847b",
     "url": "/jupiter-business-app/static/css/main.7dc80366.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jupiter-business-app/static/js/2.2553a66d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c217d096f97f239be211",
-    "url": "/jupiter-business-app/static/js/main.27015743.chunk.js"
+    "revision": "f570edfda760a60f847b",
+    "url": "/jupiter-business-app/static/js/main.62ba8a5f.chunk.js"
   },
   {
     "revision": "fc47023afd9542bbbef0",
