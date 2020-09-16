@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+nav {
+    display: flex;
+    background-color: #2a5be2;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    height: 4rem;
+}
+ 
+h3 {
+    font-size: 3.3rem;
+    align-items: center;
+    margin: .1rem; 
+    font-family: 'Fredoka One', cursive;
+}
+
+.nav-link {
+    display: flex;
+}
+
+.nav-links {
+    font-size: 1.3rem;
+    list-style: none;
+    text-decoration: none;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.nav-links:hover {
+    cursor: pointer;
+}
+
+.nav-links-icons {
+    font-size: .9rem;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .8rem;
+    right: .7rem;
+    color: white;
+    display: none;
+    font-size: 2.3rem;
+}
+
+.toggle-button:hover {
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.toggle-link {
+    color: coral;
+}
+
+.toggle-link:hover {
+    cursor: pointer;
+}
+
+.toggle-link:focus {
+    outline: none;
+}
+
+@media (max-width: 635px) {
+    nav {
+        display: flex;
+    }
+
+    h3 {
+        display: flex;
+        position: absolute;
+        left: 5px;
+        font-size: 2rem;
+    }
+
+    .toggle-button {
+        display: flex;
+        font-size: 1.85rem;
+        right: 1rem;
+        top: 1rem;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .nav-menu-div {
+        position: absolute;
+        margin-top: 2rem;
+        width: 100%;
+        height: 40rem;
+        background-color: #013220;
+        z-index: 1;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.5rem;
+        margin-left: 2.5rem;
+        width: 100%;
+    }
+
+    .nav-menu-links {
+        padding: 1.5rem;
+        font-size: 2.6rem;
+    }
+
+    .toggle-link-icons {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+

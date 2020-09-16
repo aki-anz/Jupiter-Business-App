@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component matches snapshot 1`] = `
+<div
+  className="css-tjuh7q"
+>
+  <form
+    className="css-iqyrq2"
+    onSubmit={[Function]}
+  >
+    <input
+      className="css-o077wi"
+      data-testid="field"
+      name="query"
+      onChange={[Function]}
+      placeholder="Enter Search Item..."
+      type="text"
+      value=""
+    />
+    <input
+      className="css-1b4d6h5"
+      data-testid="btn"
+      type="submit"
+      value="Go"
+    />
+  </form>
+  <div
+    className="css-wmmdcp"
+  />
+</div>
+`;

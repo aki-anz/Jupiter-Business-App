@@ -1,68 +1,79 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Jupiter Business App
 
-## Available Scripts
+This application is built with [create-react-app] (https://create-react-app.dev/), developed with libraries and npm packages such as [Formik] (https://formik.org/), [Jest] (https://jestjs.io/), [Emotion] (https://emotion.sh/docs/introduction), etc. It has an array of features such as having route/link that user can navigate on, mobile responsiveness, performance of unit tests, and many more. 
 
-In the project directory, you can run:
+This app is developed for a hypothetical startup, in our case, Jupiter!, which sells recipe services online, and they are demanding a trendy, capable and functional web application from us, that should have a satisfactory customer experience.
 
-### `npm start`
+## Core Features
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Responsive Web Design
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The entire app with all of its components, *Home.js*, *Search.js*, *Plan.js*, *Contact.js* are mobile responsive, thanks to `@media` rule from CSS.
 
-### `npm test`
+The navigation bar will automatically shrink into a hamburger menu with a list of navigation links, once clicked on, a full-screen toggle menu will appear, where user can navigate to other pages of the app.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### React-Router-Dom
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The app is built with navigation links from [react-router-dom] (https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom).
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+`BrowserRouter, Route, Link, Switch` components are imported from react-router-dom, and are used in the navigation bar, * Navbar.js *, to help user navigate between different pages of the application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Page404 Fallback Page
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+An additional page is added to the `Switch` statement at *App.js*, imported from react-router-dom, again.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Once user entered a wrong address on the address bar, an Error page will display, indicating the false address with the help of the `location` object from the `Route` component of react-router-dom.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### API With Emotion JS
 
-## Learn More
+One of the main feature is the recipe api query. User can search for any food, then the app will fetch data from the api server, in this case [Edamam] (https://www.edamam.com/), and display an array of 10 recipes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The data is fetched with [Axios] (https://github.com/axios/axios) and then styled with [Emotion] (https://emotion.sh/docs/introduction). The data is displayed in card, with title, image, link, ingredients all fetched from Edamam.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Formik With Yup
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+The app has a contact us form where user can enter feedback and opinion on their experiences with the website. And the form is built with [Formik] (https://formik.org/), then being validated by functions imported from [Yup] (https://github.com/jquense/yup).
 
-### Analyzing the Bundle Size
+The entire form is reusable, as the form state is abstracted and put onto *ContactForm.js*, then, pass props onto individual components, which likewise get props passed down on from *FormikControl.js*, which then tells react to render smaller components such as *Input.js*, *DatePicker.js*, *Radio.js* with a Javascript `Switch` statement.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+The form can't be submitted as the submit button is disabled with the `formik.isValid` props from Formik, and individual error messages, *ErrorText.js* will display under each input fields that require validation from Yup.
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### To-do List With Material-UI
 
-### Advanced Configuration
+A simple to-do list is made where user can enter ingredients from *Search.js* api, and then receive a list of ingredients that user wish to purchase or remember for later use.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+The to-do list is reusable and bootstrapped with [Material-UI] (https://material-ui.com/). The list is divided into four components, *Plan.js* where the states are held, *TodoForm.js* where has the input field and submit button add items to the `useState` hook, *Todo.js*  where a `ul` of `li` and methods are being passed down to *TodoList.js*, where the `Button`, `Typography`, `CloseIcon` from MUI are being rendered.
 
-### Deployment
+The list items are also stored in local session. Hence, refreshing the page, or visiting other routes will not delete the added items on the app. They are stored with the `localStorage.getItem` and `localStorage.setItem` methods under 2 `useEffect` hooks from React.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
+### Product Landing Page
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The Homepage is a product landing page where an image, a paragraph, and 5 social media icons from [react-icons] (https://react-icons.github.io/react-icons/) are being displayed and positioned with pure html and css.
+
+It is also mobile responsive. User can view our app on mobile devices where *Home.js* is being re-positioned accordingly.
+
+
+### React-testing-library
+
+Component *Search.js* is tested with 2 unit tests, 1 snapshot test, plus 1 integration test from the [react-testing-library] (https://testing-library.com/docs/react-testing-library/intro) to ensure it is being rendered correctly.
+
+
+### Singleton Design Pattern
+
+The app is designed with the Singleton pattern from start. According to the singleton principle, the instantiation of a class should be exlusive to **One** instance only, and **One** object coordinating most actions of the app is recommended. For example, all routes are held in *App.js*, and all states are held within one functional component each, across all components in the app.
+
+
+### Deploy With gh-pages
+
+The app is commited to GitHub and published to the repository [Jupiter Business App] (https://github.com/aki-anz/Jupiter-Business-App) via git commands with gh-pages installed on the local machine. A new repository is initiated with a master branch.
+
+
+### Host on Netlify
+
+

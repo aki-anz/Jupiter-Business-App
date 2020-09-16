@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+label {
+    font-weight: bold;
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+input + label {
+    display: inline-flex;
+    margin-right: .8rem;
+}
+
+input[type='fullName'],
+input[type='email'],
+textarea {
+  display: block;
+  width: 18rem;
+  padding: 6px 12px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+input[type='fullName']:focus,
+input[type='email']:focus,
+textarea:focus {
+    outline: none;
+}
+
+.form-control {
+    margin-bottom: 3rem;
+}
+
+.error {
+    color: red;
+}
+
+.date {
+    border: none;
+    width: 10rem;
+    line-height: 2;
+}
+
+.date:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.radio-label {
+    font-weight: lighter;
+    font-size: 1.1rem;
+}
+
+button[type='submit'] {
+    border: none;
+    width: 6rem;
+    height: 3rem;
+    margin-bottom: 3rem; 
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: .8rem;
+}
+
+button[type='submit']:hover {
+    cursor: pointer;
+}
+
+button[type='submit']:focus {
+    outline: none;
+}
+
+@media (max-width: 635px) {
+    .container {
+        font-size: .8rem;
+    }
+
+    input[type='fullName'],
+    input[type='email'],
+    textarea {
+        width: 12rem;
+    } 
+
+    .date {
+        width: 8rem;
+    }
+
+    .form-control {
+        margin-bottom: 2rem;
+    }
+
+    button[type='submit'] {
+        width: 4rem;
+    }
+    .radio-label {
+        font-size: .9rem;
+    }
+}
