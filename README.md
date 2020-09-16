@@ -19,14 +19,6 @@ The app is built with navigation links from [react-router-dom] (https://github.c
 
 `BrowserRouter, Route, Link, Switch` components are imported from react-router-dom, and are used in the navigation bar, * Navbar.js *, to help user navigate between different pages of the application.
 
-
-### Page404 Fallback Page
-
-An additional page is added to the `Switch` statement at *App.js*, imported from react-router-dom, again.
-
-Once user entered a wrong address on the address bar, an Error page will display, indicating the false address with the help of the `location` object from the `Route` component of react-router-dom.
-
-
 ### API With Emotion JS
 
 One of the main feature is the recipe api query. User can search for any food, then the app will fetch data from the api server, in this case [Edamam] (https://www.edamam.com/), and display an array of 10 recipes.
