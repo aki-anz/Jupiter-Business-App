@@ -12,7 +12,7 @@ function App() {
     <Router>
      <Navbar />
      <Switch>
-     <Route exact path='/jupiter-business-app' component={Home} />
+     <Route exact path='/' component={Home} />
      <Route path='/search' component={Search} />
      <Route path='/contact' component={Contact} />
      <Route path='/plan' component={Plan} />
