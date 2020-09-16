@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/jupiter-business-app/static/css/main.45be5b85.chunk.css",
-    "main.js": "/jupiter-business-app/static/js/main.2be5daeb.chunk.js",
-    "main.js.map": "/jupiter-business-app/static/js/main.2be5daeb.chunk.js.map",
+    "main.css": "/jupiter-business-app/static/css/main.7dc80366.chunk.css",
+    "main.js": "/jupiter-business-app/static/js/main.27015743.chunk.js",
+    "main.js.map": "/jupiter-business-app/static/js/main.27015743.chunk.js.map",
     "runtime-main.js": "/jupiter-business-app/static/js/runtime-main.4badbbce.js",
     "runtime-main.js.map": "/jupiter-business-app/static/js/runtime-main.4badbbce.js.map",
     "static/css/2.8d4cdce2.chunk.css": "/jupiter-business-app/static/css/2.8d4cdce2.chunk.css",
-    "static/js/2.405cca12.chunk.js": "/jupiter-business-app/static/js/2.405cca12.chunk.js",
-    "static/js/2.405cca12.chunk.js.map": "/jupiter-business-app/static/js/2.405cca12.chunk.js.map",
+    "static/js/2.2553a66d.chunk.js": "/jupiter-business-app/static/js/2.2553a66d.chunk.js",
+    "static/js/2.2553a66d.chunk.js.map": "/jupiter-business-app/static/js/2.2553a66d.chunk.js.map",
     "index.html": "/jupiter-business-app/index.html",
-    "precache-manifest.dfe2489f2f7a2bd0533bd3ee4dd654d0.js": "/jupiter-business-app/precache-manifest.dfe2489f2f7a2bd0533bd3ee4dd654d0.js",
+    "precache-manifest.b34399b1c6fea52a902fc103bbc70621.js": "/jupiter-business-app/precache-manifest.b34399b1c6fea52a902fc103bbc70621.js",
     "service-worker.js": "/jupiter-business-app/service-worker.js",
     "static/css/2.8d4cdce2.chunk.css.map": "/jupiter-business-app/static/css/2.8d4cdce2.chunk.css.map",
-    "static/css/main.45be5b85.chunk.css.map": "/jupiter-business-app/static/css/main.45be5b85.chunk.css.map",
-    "static/js/2.405cca12.chunk.js.LICENSE.txt": "/jupiter-business-app/static/js/2.405cca12.chunk.js.LICENSE.txt",
-    "static/media/stop.png": "/jupiter-business-app/static/media/stop.7fa0e125.png"
+    "static/css/main.7dc80366.chunk.css.map": "/jupiter-business-app/static/css/main.7dc80366.chunk.css.map",
+    "static/js/2.2553a66d.chunk.js.LICENSE.txt": "/jupiter-business-app/static/js/2.2553a66d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4badbbce.js",
     "static/css/2.8d4cdce2.chunk.css",
-    "static/js/2.405cca12.chunk.js",
-    "static/css/main.45be5b85.chunk.css",
-    "static/js/main.2be5daeb.chunk.js"
+    "static/js/2.2553a66d.chunk.js",
+    "static/css/main.7dc80366.chunk.css",
+    "static/js/main.27015743.chunk.js"
   ]
 }
