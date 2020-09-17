@@ -20,13 +20,6 @@ The app is built with navigation links from [react-router-dom] (https://github.c
 `BrowserRouter, Route, Link` components are imported from react-router-dom, and are used in the navigation bar, * Navbar.js *, to help user navigate between different pages of the application.
 
 
-### Page404 Fallback Page
-
-The app is built upon `Switch` statement which the app navigates between different pages within the same app. 
-
-There is an additional *Page404* component which shows up everytime user enters incorrect address, then, the user can click a button to return to the homepage with `Link` component.
-
-
 ### Responsive Web Design
 
 The entire app with all of its components, *Home.js*, *Search.js*, *Plan.js*, *Contact.js* are mobile responsive, thanks to `@media` rule from CSS.
