@@ -6,18 +6,33 @@ This app is developed for a hypothetical startup, in our case, Jupiter!, which s
 
 ## Core Features
 
-### Responsive Web Design
+### Single Page Application
 
-The entire app with all of its components, *Home.js*, *Search.js*, *Plan.js*, *Contact.js* are mobile responsive, thanks to `@media` rule from CSS.
+The app is a SPA which excels in building rich user interface with many features, and it heavily relies on the usage of Javascript and is exposed to web API and derives its logic from the browser more than traditional Multi Page Applications.
 
-The navigation bar will automatically shrink into a hamburger menu with a list of navigation links, once clicked on, a full-screen toggle menu will appear, where user can navigate to other pages of the app.
+This helps our app to be more interactive, and have much better user experience than MPAs are capable of, instead of serving read-only content that users may have little interest in.
 
 
 ### React-Router-Dom
 
 The app is built with navigation links from [react-router-dom] (https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom).
 
-`BrowserRouter, Route, Link, Switch` components are imported from react-router-dom, and are used in the navigation bar, * Navbar.js *, to help user navigate between different pages of the application.
+`BrowserRouter, Route, Link` components are imported from react-router-dom, and are used in the navigation bar, * Navbar.js *, to help user navigate between different pages of the application.
+
+
+### Page404 Fallback Page
+
+The app is built upon `Switch` statement which the app navigates between different pages within the same app. 
+
+There is an additional *Page404* component which shows up everytime user enters incorrect address, then, the user can click a button to return to the homepage with `Link` component.
+
+
+### Responsive Web Design
+
+The entire app with all of its components, *Home.js*, *Search.js*, *Plan.js*, *Contact.js* are mobile responsive, thanks to `@media` rule from CSS.
+
+The navigation bar will automatically shrink into a hamburger menu with a list of navigation links, once clicked on, a full-screen toggle menu will appear, where user can navigate to other pages of the app.
+
 
 ### API With Emotion JS
 
@@ -63,9 +78,7 @@ The app is designed with the Singleton pattern from start. According to the sing
 
 ### Deploy With gh-pages
 
-The app is commited to GitHub and published to the repository [Jupiter Business App] (https://github.com/aki-anz/Jupiter-Business-App) via git commands with gh-pages installed on the local machine. A new repository is initiated with a master branch.
+The app is commited to GitHub and published to the repository [Jupiter Business App] (https://github.com/aki-anz/Jupiter-Business-App) via git commands with gh-pages installed on the local machine. A new repository is initiated with a master and gh-page branch.
 
-
-### Host on Netlify
-
-
+<br>
+<br>

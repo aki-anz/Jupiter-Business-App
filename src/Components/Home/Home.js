@@ -17,11 +17,11 @@ const Home = () => (
              to our customers, of
              which we are known for.</p>
              <div className='home-icons-container'>
-          <FaFacebookSquare color='blue' className='home-icons'><a href='#'></a></FaFacebookSquare>
-          <FaInstagram color='#964b00' className='home-icons'><a href='#'></a></FaInstagram>
-          <FaYoutube color='red' className='home-icons'><a href='#'></a></FaYoutube>
-          <FaTwitterSquare color='blue' className='home-icons'><a href='#'></a></FaTwitterSquare>
-          <FaPinterestSquare color='red' className='home-icons'><a href='#'></a></FaPinterestSquare>
+                <a href='https://facebook.com'><FaFacebookSquare color='blue' className='home-icons'/></a>
+                <a href='https://instagram.com'><FaInstagram color='#964b00' className='home-icons' /></a>
+                <a href='https://youtube.com'><FaYoutube color='red' className='home-icons'/></a>
+                <a href='https://twitter.com'><FaTwitterSquare color='blue' className='home-icons'/></a>
+                <a href='https://pinterest.com'><FaPinterestSquare color='red' className='home-icons'/></a>
             </div>
         </>
     );

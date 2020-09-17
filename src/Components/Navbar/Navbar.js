@@ -16,7 +16,7 @@ const Navbar = () => {
    const toggleMenu = (
        <div className='nav-menu-div'>
         <ul className='nav-menu'>
-        <li className='nav-menu-links'><Link className='toggle-link' to='/'><MdHome className='toggle-link-icons'/>Home</Link></li>
+        <li className='nav-menu-links'><Link className='toggle-link' to='/jupiter-business-app'><MdHome className='toggle-link-icons'/>Home</Link></li>
         <li className='nav-menu-links'><Link className='toggle-link' to='search'><BiSearch className='toggle-link-icons'/>Search</Link></li>
         <li className='nav-menu-links'><Link className='toggle-link' to='plan'><AiOutlineBook className='toggle-link-icons'/>Plan</Link></li>
         <li className='nav-menu-links'><Link className='toggle-link' to='/contact'><MdContactMail className='toggle-link-icons'/> Contact Us</Link></li>
@@ -35,7 +35,7 @@ const Navbar = () => {
             {value && toggleMenu}
             </div>
             <ul className='nav-link'>
-            <li className='nav-links'><Link className='link' to='/'><MdHome className='nav-links-icons'/>Home</Link></li>
+            <li className='nav-links'><Link className='link' to='/jupiter-business-app'><MdHome className='nav-links-icons'/>Home</Link></li>
             <li className='nav-links'><Link className='link' to='/search'><BiSearch className='nav-links-icons'/>Search</Link></li>
             <li className='nav-links'><Link className='link' to='/plan'><AiOutlineBook className='nav-links-icons'/>Plan</Link></li>
             <li className='nav-links'><Link className='link' to='/contact'><MdContactMail className='nav-links-icons'/> Contact Us</Link></li>

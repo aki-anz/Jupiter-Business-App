@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Search from './Components/Search/Search';
 import Contact from './Components/Contact/Contact';
@@ -13,7 +13,7 @@ function App() {
     <Router>
      <Navbar />
      <Switch>
-     <Route exact path='/' component={Home} />
+     <Route exact path='/jupiter-business-app' component={Home} />
      <Route path='/search' component={Search} />
      <Route path='/contact' component={Contact} />
      <Route path='/plan' component={Plan} />
