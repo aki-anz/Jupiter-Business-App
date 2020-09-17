@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/jupiter-business-app/precache-manifest.e9200d80f33d9547e69c4aca50cff0b0.js"
+  "/jupiter-business-app/precache-manifest.856dc50ad11aadfd30fc4adfd893a41d.js"
 );
 
 self.addEventListener('message', (event) => {
