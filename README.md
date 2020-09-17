@@ -1,6 +1,6 @@
 # Jupiter Business App
 
-[Live Demo] (https://aki-anz.github.io/jupiter-business-app)
+[Live Demo](https://aki-anz.github.io/jupiter-business-app)
 
 This application is built with [create-react-app] (https://create-react-app.dev/), developed with libraries and npm packages such as [Formik] (https://formik.org/), [Jest] (https://jestjs.io/), [Emotion] (https://emotion.sh/docs/introduction), etc. It has an array of features such as having route/link that user can navigate on, mobile responsiveness, performance of unit tests, and many more. 
 
