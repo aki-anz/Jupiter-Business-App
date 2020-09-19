@@ -10,9 +10,11 @@ This app is developed for a hypothetical startup, in our case, Jupiter!, which s
 
 ### Single Page Application
 
-The app is a SPA which excels in building rich user interface with many features, and it heavily relies on the usage of Javascript and is exposed to web API and derives its logic from the browser more than traditional Multi Page Applications.
+The app is a SPA which excels in building rich user interface with many features, and it heavily relies on the usage of Javascript and web APIs, and they require more Javascript functions than multi page apps.
 
-This helps our app to be more interactive, and have much better user experience than MPAs are capable of, instead of serving read-only content that users may have little interest in.
+This helps our app to be more interactive, and have a much better user experience than MPAs, instead of serving read-only content that users may have little chance to perform more complex actions on, such as scrolling through maps, or browsing different routes of the same page.
+
+Hence, this app is a better alternative than static websites and MPAs due to its speed and interaction. Users can get mobile-like experience in our app, like those in native mobile apps, and there is no page reload needed, as it is a SPA.
 
 
 ### React-Router-Dom
@@ -21,12 +23,15 @@ The app is built with navigation links from [react-router-dom](https://github.co
 
 `BrowserRouter, Route, Link` components are imported from react-router-dom, and are used in the navigation bar, * Navbar.js *, to help user navigate between different pages of the application.
 
+Users stay on the same page but still can view different components of the app. This greatly enhances the UX of our app.
 
 ### Responsive Web Design
 
 The entire app with all of its components, *Home.js*, *Search.js*, *Plan.js*, *Contact.js* are mobile responsive, thanks to `@media` rule from CSS.
 
 The navigation bar will automatically shrink into a hamburger menu with a list of navigation links, once clicked on, a full-screen toggle menu will appear, where user can navigate to other pages of the app.
+
+Hence, the app is capable of mobile usage. All parts work perfectly fine in mobile devices, and our customers can use our product on either PCs or smartphones.
 
 
 ### API With Emotion JS
@@ -58,7 +63,7 @@ The list items are also stored in local session. Hence, refreshing the page, or 
 
 The Homepage is a product landing page where an image, a paragraph, and 5 social media icons from [react-icons](https://react-icons.github.io/react-icons/) are being displayed and positioned with pure html and css.
 
-It is also mobile responsive. User can view our app on mobile devices where *Home.js* is being re-positioned accordingly.
+It is also mobile responsive. User can view our app on mobile devices where *Home.js* is being re-positioned with `@media queries` accordingly.
 
 
 ### React-testing-library
