@@ -4,7 +4,7 @@
 
 This application is built with [create-react-app](https://create-react-app.dev/), developed with libraries and npm packages such as [Formik](https://formik.org/), [Jest](https://jestjs.io/), [Emotion](https://emotion.sh/docs/introduction), etc. It has an array of features such as having route/link that user can navigate on, mobile responsiveness, performance of unit tests, and many more. 
 
-This app is developed for a hypothetical startup, in our case, Jupiter!, which sells recipe services online, and they are demanding a trendy, capable and functional web application from us, that should have a satisfactory customer experience.
+This app is developed for a hypothetical startup, in our case, Jupiter!, which sells recipe services online, and they are demanding a trendy, capable and functional web application from us, which should have a satisfactory customer experience.
 
 ## Core Features
 
