@@ -71,7 +71,7 @@ It is also mobile responsive. User can view our app on mobile devices where *Hom
 Component *Search.js* is tested with 2 unit tests, 1 snapshot test, plus 1 integration test from the [react-testing-library](https://testing-library.com/docs/react-testing-library/intro) to ensure it is being rendered correctly.
 
 
-### Singleton Design Pattern
+### Single Responsibility Principle Design Pattern
 
 The app is designed with the Singleton pattern from start. According to the singleton principle, the instantiation of a class should be exlusive to **One** instance only, and **One** object coordinating most actions of the app is recommended. For example, all routes are held in *App.js*, and all states are held within one functional component each, across all components in the app.
 
